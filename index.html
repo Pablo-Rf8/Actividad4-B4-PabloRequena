@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Catálogo de Productos</h1>
+      <p class="subtitle">Consumo dinámico de API con FakeStoreAPI</p>
+      
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Buscar producto por título..."
+          aria-label="Buscar producto"
+        >
+        <button id="reload-btn" type="button">Recargar</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="loading" class="status-msg">Cargando productos...</div>
+      <div id="error" class="status-msg error-msg hidden"></div>
+      <section id="products-grid" class="products-grid"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
